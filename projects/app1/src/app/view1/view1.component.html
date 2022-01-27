@@ -1,0 +1,36 @@
+<div [ngStyle]="{ backgroundColor: getBackground() }">
+  <p>{{ title }}</p>
+  <h4>This one uses dynamically changing backgrounds</h4>
+  <ul>
+    <li class="col-xs-2">
+      <button class="btn btn-primary" (click)="setBackground('blue')">
+        Blue
+      </button>
+    </li>
+    <li class="col-xs-2">
+      <button class="btn btn-primary" (click)="setBackground('orange')">
+        Orange
+      </button>
+    </li>
+    <li class="col-xs-2">
+      <button class="btn btn-primary" (click)="setBackground('pink')">
+        Pink
+      </button>
+    </li>
+    <li class="col-xs-2">
+      <button class="btn btn-primary" (click)="setBackground('red')">
+        Red
+      </button>
+    </li>
+    <li class="col-xs-2">
+      <button class="btn btn-primary" (click)="setBackground('green')">
+        Green
+      </button>
+    </li>
+  </ul>
+</div>
+<br />
+<br />
+<br />
+<hr />
+<a routerLink="../">&leftarrow; Go Back</a>
