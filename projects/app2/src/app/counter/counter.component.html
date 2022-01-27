@@ -3,12 +3,20 @@
   clicked
 </h4>
 <h4>Counter is currently {{ counter }}</h4>
+<br />
 <div class="row">
   <button class="btn btn-success" (click)="countUp()">Count Up by 1</button>
-  <button class="btn btn-success" (click)="countDown()" disabled="counter=0">
+  <button
+    class="btn btn-success"
+    (click)="countDown()"
+    [disabled]="counter <= 0"
+  >
     Count Down by 1
   </button>
   <button class="btn btn-success" (click)="timesTwo()">Multiply by 2</button>
   <button class="btn btn-success" (click)="divideTwo()">Divide by 2</button>
+  <button class="btn btn-success" (click)="squareNum()">Number ^ 2</button>
+  <button class="btn btn-success" (click)="squareRoot()">Square Root</button>
   <button class="btn btn-warning" (click)="clear()">Clear Count</button>
+  <br />
 </div>

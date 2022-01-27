@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class View1Component implements OnInit {
 
+  clicked = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +21,10 @@ export class View1Component implements OnInit {
 
   setBackground(color: string){
     this.backgroundColor = color
+    this.clicked = true;
+    if(color === 'transparent'){
+      this.clicked = false
+    }
   }
 
   getBackground(){

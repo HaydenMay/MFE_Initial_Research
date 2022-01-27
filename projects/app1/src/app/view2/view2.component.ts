@@ -15,4 +15,8 @@ export class View2Component implements OnInit {
   data? = '';
 
   title : string = 'App 1'
+
+  clearData(){
+    this.data = ''
+  }
 }
