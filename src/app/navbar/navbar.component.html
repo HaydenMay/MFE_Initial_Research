@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div *ngIf="!getRoute()" class="col-xs-12">
       <ul>
         <li class="col-xs-6">
           <a routerLink="app1">Click here for App number 1 </a>
@@ -12,4 +12,3 @@
     </div>
   </div>
 </div>
-<hr />

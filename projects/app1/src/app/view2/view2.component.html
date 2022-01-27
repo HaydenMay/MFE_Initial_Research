@@ -1,21 +1,23 @@
 <div style="text-align: center">
-  <p>This is {{ title }} view 2</p>
   <h4>This page utilizes input fields to mess around with</h4>
   <div>
     <label for="data">Input Anything Here:</label>
     <input
+      style="margin: 5px;"
       placeholder="Right Here"
       type="text"
       id="data"
       [(ngModel)]="data"
       name="data"
     />
+    <button class="btn btn-warning" *ngIf="data != ''" (click)="clearData()">Clear</button>
   </div>
   <br />
-  <p>Your input appears here capitalized &rightarrow; {{ data | uppercase }}</p>
+  <p>Your input appears here capitalized</p>
+  <p> &DoubleDownArrow;</p>
+  <p>{{ data | uppercase }}</p>
+
+  <br />
+  <hr />
+  <a class="col-xs-12" routerLink="../">&leftarrow; Go Back</a>
 </div>
-<br />
-<br />
-<br />
-<hr />
-<a routerLink="../">&leftarrow; Go Back</a>

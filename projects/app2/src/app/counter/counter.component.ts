@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CounterComponent implements OnInit {
   constructor() {}
 
+  
+
   ngOnInit(): void {}
+  
 
   counter: number = 0;
 
@@ -28,6 +31,14 @@ export class CounterComponent implements OnInit {
 
   divideTwo() {
     this.counter /= 2;
+  }
+
+  squareNum(){
+    this.counter *= this.counter
+  }
+
+  squareRoot(){
+    this.counter = Math.sqrt(this.counter)
   }
 
   clear(){

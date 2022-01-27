@@ -1,36 +1,62 @@
-<div [ngStyle]="{ backgroundColor: getBackground() }">
-  <p>{{ title }}</p>
-  <h4>This one uses dynamically changing backgrounds</h4>
+<div [ngStyle]="{ backgroundColor: getBackground(), textAlign: 'center' }">
+  <h4 *ngIf="clicked === false">This view uses dynamically changing backgrounds</h4>
+  <p style="color: white">
+    You can see this font after the background has changed
+  </p>
   <ul>
-    <li class="col-xs-2">
+    <li class="col-xs-1">
       <button class="btn btn-primary" (click)="setBackground('blue')">
         Blue
       </button>
     </li>
-    <li class="col-xs-2">
+    <li class="col-xs-1">
       <button class="btn btn-primary" (click)="setBackground('orange')">
         Orange
       </button>
     </li>
-    <li class="col-xs-2">
+    <li class="col-xs-1">
       <button class="btn btn-primary" (click)="setBackground('pink')">
         Pink
       </button>
     </li>
-    <li class="col-xs-2">
+    <li class="col-xs-1">
       <button class="btn btn-primary" (click)="setBackground('red')">
         Red
       </button>
     </li>
-    <li class="col-xs-2">
+    <li class="col-xs-1">
       <button class="btn btn-primary" (click)="setBackground('green')">
         Green
       </button>
     </li>
+    <li class="col-xs-1">
+      <button class="btn btn-primary" (click)="setBackground('purple')">
+        Purple
+      </button>
+    </li>
+    <li class="col-xs-1">
+      <button class="btn btn-primary" (click)="setBackground('yellow')">
+        Yellow
+      </button>
+    </li>
+    <li class="col-xs-1">
+      <button class="btn btn-primary" (click)="setBackground('gray')">
+        Gray
+      </button>
+    </li>
+    <li class="col-xs-1">
+      <button class="btn btn-primary" (click)="setBackground('brown')">
+        Brown
+      </button>
+    </li>
+    <li class="col-xs-1">
+      <button class="btn btn-primary" (click)="setBackground('transparent')">
+        Normal
+      </button>
+    </li>
   </ul>
+  <br />
+  <br />
+  <hr />
+  <a class="col-xs-12" routerLink="../">&leftarrow; Go Back</a>
 </div>
-<br />
-<br />
-<br />
-<hr />
-<a routerLink="../">&leftarrow; Go Back</a>
