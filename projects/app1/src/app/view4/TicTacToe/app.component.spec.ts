@@ -1,7 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -21,14 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'app1'`, () => {
+  it(`should have as title 'tictactoe'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('app1');
+    expect(app.title).toEqual('tictactoe');
   });
 
-  it('should allow main component to run', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance).toBeInstanceOf(MainComponent)
-  })
 });

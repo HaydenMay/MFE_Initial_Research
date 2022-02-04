@@ -1,0 +1,25 @@
+<p>
+<a class="col-xs-12" routerLink="../" style="position: absolute; text-align: left"
+  >&leftarrow; Go Back</a
+>
+</p>
+
+<div class="background">
+  <div class="center">
+    <h4>Current Player: {{ player }}</h4>
+
+    <button class="btn" (click)="newGame()">Start New Game</button>
+
+    <main>
+      <app-square
+        *ngFor="let square of squares; let i = index"
+        [value]="square"
+        (click)="makeMove(i)"
+        [ngStyle]="{backgroundColor: getColor(),
+        click: getColor()}"
+      >
+      </app-square>
+    </main>
+    <h2 *ngIf="winner">Winner is {{ winner }}</h2>
+  </div>
+</div>
