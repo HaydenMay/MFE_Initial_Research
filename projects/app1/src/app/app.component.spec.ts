@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { MainComponent } from './main/main.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -26,10 +27,8 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('app1');
   });
 
-  it('should render title', () => {
+  it('should allow main component to run', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('app1 app is running!');
-  });
+    expect(fixture.componentInstance).toBeInstanceOf(MainComponent)
+  })
 });
