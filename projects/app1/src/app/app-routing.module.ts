@@ -7,6 +7,7 @@ import { View3Component } from './view3/view3.component';
 import { View4Component } from './view4/view4.component';
 
 const routes: Routes = [
+
   { path: '', component: AppComponent},
   { path: 'view1', component: View1Component },
   { path: 'view2', component: View2Component },

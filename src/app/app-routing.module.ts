@@ -19,4 +19,4 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {preloadingStrategy: NoPreloading})],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
