@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { CounterComponent } from './counter/counter.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { CounterComponent } from './counter/counter.component';
     CounterComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
@@ -21,7 +22,7 @@ import { CounterComponent } from './counter/counter.component';
 })
 export class AppModule { }
 
-const providers: any = []
+/* const providers: any = []
 
 @NgModule({})
 export class App2SharedModule{
@@ -31,4 +32,4 @@ export class App2SharedModule{
       providers: providers
     }
   }
-}
+} */

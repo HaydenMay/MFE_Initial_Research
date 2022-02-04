@@ -3,18 +3,20 @@
   <div>
     <label for="data">Input Anything Here:</label>
     <input
-      style="margin: 5px;"
+      style="margin: 5px"
       placeholder="Right Here"
       type="text"
       id="data"
       [(ngModel)]="data"
       name="data"
     />
-    <button class="btn btn-warning" *ngIf="data != ''" (click)="clearData()">Clear</button>
+    <button class="btn btn-warning" *ngIf="data != ''" (click)="clearData()">
+      Clear
+    </button>
   </div>
   <br />
   <p>Your input appears here capitalized</p>
-  <p> &DoubleDownArrow;</p>
+  <p>&DoubleDownArrow;</p>
   <p>{{ data | uppercase }}</p>
 
   <br />
